@@ -1,0 +1,18 @@
+# Standard Python .gitignore
+# Ignore compiled Python files
+*.pyc
+*.pyo
+# Ignore virtual environment directories
+.venv/
+env/
+# Ignore configuration files
+.env
+# Ignore IDE-specific files
+.idea/
+*.iml
+# Ignore package files for Python projects
+*.egg-info/
+*.dist-info/
+# Ignore default Linux files
+*.swp
+*.swn
