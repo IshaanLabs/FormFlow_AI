@@ -77,21 +77,28 @@ cd FormFlow_AI
 ```
 
 
-### 2. STT/TTS Service
+### 2. Create and activate a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. STT/TTS Service
 
 ```bash
 cd stt-tts-service
 pip install -r requirements.txt
 ```
 
-### 3. Agent Service
+### 4. Agent Service
 
 ```bash
 cd agent-service
 pip install -r requirements.txt
 ```
 
-### 4. UI
+### 5. UI
 
 ```bash
 cd ui-service
