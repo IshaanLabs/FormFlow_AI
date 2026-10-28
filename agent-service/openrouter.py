@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 logger = logging.getLogger(__name__)
 
-# GEMINI_MODEL = "gemini-2.5-flash-preview-05-20"
+
 GEMINI_MODEL = "gemini-3-flash-preview"
 
 def call_gemini(api_key: str, messages: list, temperature: float = 0.1) -> str:
