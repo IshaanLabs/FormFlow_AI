@@ -121,23 +121,66 @@ Get your key from [aistudio.google.com/apikey](https://aistudio.google.com/apike
 
 ## Usage
 
-Start all three services in separate terminals:
+You can start the application using either the provided startup scripts (recommended) or by running each service manually.
+
+### Option 1: Using the Startup Scripts (Recommended)
+
+#### Windows
+
+Simply double-click **`start.bat`** from the project root.
+
+#### Linux / macOS
+
+Make the script executable (only required once):
 
 ```bash
-# Terminal 1 — STT/TTS
+chmod +x start.sh
+```
+
+Then run:
+
+```bash
+./start.sh
+```
+
+Both scripts will automatically:
+
+- Activate the virtual environment
+- Start the **STT/TTS Service** on port **8001**
+- Start the **Agent Service** on port **8002**
+- Start the **Streamlit UI**
+
+---
+
+### Option 2: Start Services Manually
+
+Open three separate terminals.
+
+#### Terminal 1 — STT/TTS
+
+```bash
 cd stt-tts-service
 uvicorn main:app --port 8001
+```
 
-# Terminal 2 — Agent
+#### Terminal 2 — Agent
+
+```bash
 cd agent-service
 uvicorn main:app --port 8002
+```
 
-# Terminal 3 — UI
+#### Terminal 3 — UI
+
+```bash
 cd ui-service
 streamlit run app.py
 ```
 
-Open [http://localhost:8501](http://localhost:8501) in your browser.
+
+Once all services are running, open **http://localhost:8501** in your browser.
+
+---
 
 ### Flow
 
