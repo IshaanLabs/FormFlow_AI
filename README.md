@@ -69,21 +69,29 @@ FormFlow_AI/
 - Python 3.10+
 - A [Google AI Studio](https://aistudio.google.com/apikey) API key
 
-### 1. STT/TTS Service
+### 1. Clone the repository:
+
+```bash
+git clone  https://github.com/IshaanLabs/FormFlow_AI
+cd FormFlow_AI
+```
+
+
+### 2. STT/TTS Service
 
 ```bash
 cd stt-tts-service
 pip install -r requirements.txt
 ```
 
-### 2. Agent Service
+### 3. Agent Service
 
 ```bash
 cd agent-service
 pip install -r requirements.txt
 ```
 
-### 3. UI
+### 4. UI
 
 ```bash
 cd ui-service
